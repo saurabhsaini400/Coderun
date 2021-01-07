@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+     @media screen and (max-width: 1060px){
+    #primary {width:67%;}
+    #secondary {width:30%;margin-left:3%}
+}
+@media screen and (max-width:768px){
+    #primary {width:100%; }
+    #secondary {width:100%;margin:0; border:none;}
+}
+@media (min-device-width:600px){
+    img[data-src-600px]
+    {
+        content:attr(data-src-600px,url);
+    }
+}
+@media (min-device-width:800px){
+    img[data-src-800px]
+    {
+        content:attr(data-src-800px,url);
+    }
+}
+     /* .flex_container{
+        position: -webkit-sticky;
+     position: sticky;
+     top: 0;
+     display:flex;
+     width: 100%;
+     color: black;
+    background:blue;
+     z-index: 1;
+     box-sizing: border-box;
+     padding: 32px;
+
+     } */
+  .flex_container{
+     /* position: -webkit-sticky;
+     position: sticky; */
+     display:flex;
+     top: 0;
+     width: 100%;
+     color:white;
+     border-bottom: 0px solid #fff;
+     z-index: 1;
+     box-sizing: border-box;
+     padding: 46px;
+     left: 14%;
+            
+        }
+        img{
+            border-radius: 7px;
+            margin: 25px;
+        }
+        .c{
+            background: white;
+           font-size: 35px; 
+        }
+        h3{
+            font-size: 20px;
+        }
+        .flex--items{
+            flex: 1;
+            text-align: center;
+            padding: 7px;
+            border-right: 1px solid #fff;
+            background: blue;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+        }
+        .flex--content{
+            display: flex;
+            margin-top: 56px;
+        }
+        .flex--content p{
+            font-size: 14px;
+            line-height: 24px;
+        }
+        .flex--items:hover{
+            background:#1865f2;
+        }
+         /* .keyword--block{
+            background:blue;
+            border-radius: 5px; */
+            /* position: -webkit-sticky;
+             position: sticky;
+            top: 100px; */
+            /* display:inline-block;
+            margin: 4%;
+            padding-left: 20px;
+            padding-right: 40px;
+            padding-bottom: 45px; */
+
+        } 
+        .flex--contentL{
+           flex-grow:0;
+           flex-shrink:0;
+           flex-basis:55%;
+       }
+        .flex--contentR
+        {
+            flex-grow:0;
+            flex-shrink: 0;
+            flex-basis: 85%;
+            background: whitesmoke;
+        }
+        .flex--contentR h3{
+            font-weight: 600;
+
+
+        }
+        .flex--contentR p{
+            font-size: 24px;
+        }
+        .content--container{
+            position: relative;
+            display: block;
+            margin-right: 450px;
+        }
+        .flex--items:last-child{
+           
+            border-right: none;
+        }
+       
+        #p,ul,#t{
+            color: white;
+        }
+        #cp{
+            font-size: 20px;
+        }
+        #k{
+            font-size: 30px;
+        }
+       .ex{
+           background: wheat;
+           border-radius: 1px;
+       }
+       .ex1{
+           background: wheat;
+           border-radius: 1px;
+       }
+       table, th, td,tr {
+  border: 2px solid red;
+  border-collapse: collapse;
+  background: wheat;
+}
+
+ </style>
+</head>
+<body>
+    <div class="c">
+    <img src="cp.jpg" dara-scr-600px="image-600px.jpg" dara-scr-800px="image-800px.jpg"  class="card-img"alt="" height="166" width="166" <h1 align="center"><b> LEARN C-PROGRAMMING</b></h1>
+    
+    </div>
+
+    
+    <div class="flex_container">
+        <div class="flex--items">Examples</div>
+     <div class="flex--items">Tutorial</div>
+     <div class="flex--items">Online compiler</div>
+    </div>
+    <div class="content--container">
+        <div class="flex--content">
+            <div class="flex--contentL">
+            <div class="keyword--block">
+                <!-- <p id="p">
+                    <strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<u>SUMMERY</u></strong><br>
+                     
+                     <!-- <ul>
+                        <li> C Introduction</li><br>
+                        <li>C Flow Control</li><br>
+                        <li> C Functions</li><br>
+                        <li> Array</li><br>
+                        <li> Pointer </li><br>
+                        <li> String</li><br>
+                        <li> Structure And Union</li><br>
+                        <li> C Programming Files</li><br>
+                        <li>About C Programming</li><br>
+                        <li> Why Learn C</li>
+                    </ul>  -->
+                </p> -->
+            </div>
+        </div>
+     
+  <div class="flex--contentR">
+    <hr>
+    <h2><u>C Introduction</u></h2>
+    <hr>
+    <h3 id="k"><b>C Keywords & Identifier</b></h3>
+    <p id="cp">
+        In this tutorial, you will learn about keywords (also called as reserved words) in C programming,also you will learn about Identifiers and how to name them.
+    </p>
+    <hr>
+    <h3><b>Character set</b></h3>
+    <hr>
+    <p id="cp">
+
+        As every language contains a set of characters used to construct words, statements, etc., C language also has a set of characters which include alphabets, digits, and special symbols. C language supports a total of 256 characters.
+
+    </p>
+    <hr>
+    <h3><b>Alphabets</b></h3>
+    <hr>
+    <div class="ex">
+        <h4>Uppercase:A,B,C.............................X,Y,Z</h4>
+        <h4>Lowercase:a,b,c.............................x,y,z</h4>
+    </div>
+    <p id="cp">
+        C accepts both lowercase as well as Uppercase alphabetsas variables and functions.
+    </p><br>
+    
+  <hr> 
+<h3><b>Digits</b></h3>
+<hr>
+<div class="ex1">
+<p id="cp">
+    0 1 2 3 4 5 6 7 8 9 
+</p><br>
+</div>
+
+<h3>Special Characters</h3>
+<table style="width:95%">
+  
+    <tr>
+      <td>,</td>
+      <td>[</td>
+      <td>]</td>
+      <td>.</td>
+    </tr>
+    <tr>
+      <td>(</td>
+      <td>)</td>
+      <td>-</td>
+      <td>;</td>
+    </tr>
+   <tr>
+        <td>$</td>
+        <td>:</td>
+        <td>%</td>
+        <td>+</td>
+      </tr>
+      <tr>
+        <td>></td>
+        <td>#</td>
+        <td>?</td>
+        <td>,</td>
+      </tr>
+      <tr>
+      <td>&</td>
+      <td>{</td>
+      <td>}</td>
+      <td>"</td>
+    </tr>
+    <tr>
+        <td>^</td>
+        <td>!</td>
+        <td>-</td>
+        <td>/</td>
+      </tr>
+      <tr>
+        <td>|</td>
+        <td>!</td>
+        <td>*</td>
+        <td>/</td>
+      </tr>
+     
+  </table>
+    
+
+    <h3><b>C Keywords</b></h3>
+    <p id="cp">
+        Keywords are predefined,reserved In C, we have 32 keywords, which have their predefined meaning and cannot be used as a variable name.
+        Keywords must be written in Lowercase.</p>
+        <br>for example:<br>
+        <div class="ex">
+            <h4>int var;</h4>   
+        </div>
+        <p id="cp">Here , <u>int</u> is a Keyword that indicates <u>var</u> is a variable.
+        </p>
+        <br>
+        <u>LIST OF KEYWORDS</u>
+        </p>
+        <table style="width:95%">
+  
+            <tr>
+              <td>auto</td>
+              <td>double</td>
+              <td>int</td>
+              <td>struct</td>
+            </tr>
+            <tr>
+              <td>break</td>
+              <td>else</td>
+              <td>long</td>
+              <td>switch</td>
+            </tr>
+           <tr>
+                <td>$</td>
+                <td>:</td>
+                <td>%</td>
+                <td>+</td>
+              </tr>
+              <tr>
+                <td>case</td>
+                <td>enum</td>
+                <td>register</td>
+                <td>typedef</td>
+              </tr>
+              <tr>
+              <td>char</td>
+              <td>extern</td>
+              <td>return</td>
+              <td>union</td>
+            </tr>
+            <tr>
+                <td>continue</td>
+                <td>for</td>
+                <td>signed</td>
+                <td>void</td>
+              </tr>
+              <tr>
+                <td>do</td>
+                <td>if</td>
+                <td>static</td>
+                <td>while</td>
+              </tr>
+              <tr>
+                <td>default</td>
+                <td>goto</td>
+                <td>sizeof</td>
+                <td>volatile</td>
+              </tr>
+              <tr>
+                <td>const</td>
+                <td>goto</td>
+                <td>short</td>
+                <td>unsigned</td>
+              </tr>
+          </table>
+          <h3><b>C identifiers</b></h3>
+          <p id="cp">
+            Identifiers are names given to different entities such as constants, variables, structures, functions, etc.</p>
+              <br>for example:<br>
+              <div class="ex">
+                  <h4>int amount;</h4>   
+                  <h4>double totalbalance;</h4>   
+              </div>   
+              <p id="cp">In the above example, <u>amount</u> and <u>totalbalance</u> are identifiers and int, and double are keywords.
+              </p>   
+              <hr>
+              <h3><b>Rules for naming identifiers</b></h3>    
+              <hr>
+              
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
